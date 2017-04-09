@@ -1,6 +1,8 @@
 import React from 'react'
 import HireMeButton from './hire-me-button'
 import Link from 'next/link'
+import ReactTooltip from 'react-tooltip'
+
 
 const Header = () => (
     <div>
@@ -32,7 +34,7 @@ const Header = () => (
         </style>
 
         <nav>
-            <div className="sources">(<a target="_blank" href="https://github.com/kandros/jagasantagostino.com" className="source-link">sources</a>)</div>
+            <div data-tip data-for="sources" className="sources">(<a target="_blank" href="https://github.com/kandros/jagasantagostino.com" className="source-link">sources</a>)</div>
             {/*<Link href="/about" className="link"><a className="link">about</a></Link>*/}
             {/*<a target="_blank" href="//blog.jagasantagostino.com" className="link">blog</a>*/}
             {/*<Link href="/open-source" className="link"><a className="link">open-source</a></Link>*/}
@@ -40,6 +42,11 @@ const Header = () => (
             <div className="hire-me-wrapper">
                 <HireMeButton/>
             </div>
+
+            <ReactTooltip id="sources" effect="solid" place="bottom">
+                <span>Open Source 🎉🎉🎉</span>
+            </ReactTooltip>
+
         </nav>
     </div>
 )
