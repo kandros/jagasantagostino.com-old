@@ -24,6 +24,20 @@ export default () => (
         h1 {
             text-align: right;
             margin-right: 8px;
+            position: relative;
+            animation-duration: 2s;
+            animation-name: slidein;
+            opacity: 1;
+        }
+        @keyframes slidein {
+              from {
+                margin-right: -240px;
+                opacity: 0;
+              }
+            to {
+                margin-right: 8px;
+                opacity: 1;
+            }
         }
         .accent {
             font-size: 22px;

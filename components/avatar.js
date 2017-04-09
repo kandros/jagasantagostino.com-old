@@ -1,7 +1,7 @@
 import React, {PropTypes} from 'react'
 
 const Avatar = ({src}) => (
-    <div>
+    <div style={{zIndex: 10}}>
         <style jsx>{`
         img {
             max-width: 100%;
