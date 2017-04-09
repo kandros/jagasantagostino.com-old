@@ -26,3 +26,4 @@ typings/
 .env
 .idea/
 .next/
+.DS_STORE

@@ -1,3 +1,3 @@
 export default () => (
-    <div>hire-me</div>
+    <div>contacts</div>
 )
