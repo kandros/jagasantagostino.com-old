@@ -7,8 +7,6 @@ const Socials = () => (
         <style jsx>{`
         div {
             position: relative;
-            animation-duration: 2s;
-            animation-name: slidein;
             opacity: 1;
         }
         @keyframes slidein {
@@ -21,14 +19,20 @@ const Socials = () => (
                 opacity: 1;
             }
         }
+        @media (min-width: 768px) {
+         div {
+            animation-duration: 2s;
+            animation-name: slidein;
+         }
+        }
         `}
         </style>
         <div>
-            <SocialIcon data-for="social" data-tip="Twitter" style={{marginLeft: 16}} color="black" url="https://twitter.com/kandros5591"/>
-            <SocialIcon data-for="social" data-tip="Github" style={{marginLeft: 16}} color="black" url="https://github.com/kandros"/>
-            <SocialIcon data-for="social" data-tip="Linkedin" style={{marginLeft: 16}} color="black" url="https://www.linkedin.com/in/jaga-santagostino-500676b0/"/>
-            <SocialIcon data-for="social" data-tip="Blog" style={{marginLeft: 16}} color="black" network="medium" url="http://blog.jagasantagostino.com/"/>
-            <SocialIcon data-for="social" data-tip="Email" style={{marginLeft: 16}} color="black" network="email" url="mailto:info@jagasantagostino.com"/>
+            <SocialIcon data-for="social" data-tip="Twitter" style={{marginLeft: 16, marginTop: 12}} color="black" url="https://twitter.com/kandros5591"/>
+            <SocialIcon data-for="social" data-tip="Github" style={{marginLeft: 16, marginTop: 12}} color="black" url="https://github.com/kandros"/>
+            <SocialIcon data-for="social" data-tip="Linkedin" style={{marginLeft: 16, marginTop: 12}} color="black" url="https://www.linkedin.com/in/jaga-santagostino-500676b0/"/>
+            <SocialIcon data-for="social" data-tip="Blog" style={{marginLeft: 16, marginTop: 12}} color="black" network="medium" url="http://blog.jagasantagostino.com/"/>
+            <SocialIcon data-for="social" data-tip="Email" style={{marginLeft: 16, marginTop: 12}} color="black" network="email" url="mailto:info@jagasantagostino.com"/>
 
             <ReactTooltip id="social" effect="solid"/>
         </div>

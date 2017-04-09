@@ -1,6 +1,7 @@
 import Header from '../components/header'
 import Avatar from '../components/avatar'
 import 'glamor/reset'
+import HireMeButton from '../components/hire-me-button'
 import Socials from '../components/socials'
 
 export default () => (
@@ -25,8 +26,6 @@ export default () => (
             text-align: right;
             margin-right: 8px;
             position: relative;
-            animation-duration: 2s;
-            animation-name: slidein;
             opacity: 1;
         }
         @keyframes slidein {
@@ -48,6 +47,33 @@ export default () => (
             margin-top: 180px;
             justify-content: center;
         }
+
+        @media (max-width: 768px) {
+            .main {
+                flex-direction: column;
+                margin-top: 0px;
+            }
+            .hire-me-mobile {
+                margin-top: 80px;
+                display: flex;
+                justify-content: center;
+            }
+            .socials-wrapper {
+                padding: 16px;
+                margin-top: 60px;
+                margin-bottom: 16px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .hire-me-mobile {
+                display: none;
+            }
+            h1 {
+                animation-duration: 2s;
+                animation-name: slidein;
+            }
+        }
     `}</style>
         <div className="page">
             <Header/>
@@ -60,6 +86,10 @@ export default () => (
                     <span className="accent">&& </span> Trainer <br/>
                 </h1>
                 <Avatar src="/static/me-min.jpg"/>
+            </div>
+
+            <div className="hire-me-mobile">
+                <HireMeButton/>
             </div>
 
             <div className="socials-wrapper">

@@ -30,6 +30,17 @@ const Header = () => (
             }
             .hire-me-wrapper {
             }
+
+            @media (max-width: 768px) {
+                .hire-me-wrapper {
+                    display: none;
+                }
+                .sources {
+                    position: absolute;
+                    top: 6px;
+                    right: 12px;
+                }
+            }
         `}
         </style>
 
