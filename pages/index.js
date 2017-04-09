@@ -1,21 +1,11 @@
 import Header from '../components/header'
 import Avatar from '../components/avatar'
 import 'glamor/reset'
-// https://evernote.com/media/img/products/web-clipper/icon-laptop@2x.png
+import Socials from '../components/socials'
 
 export default () => (
     <div>
         <style jsx>{`
-      {/*:global(body) {*/}
-            {/*background: linear-gradient(90deg, #2DBE60 0%, #499b9e 100%);*/}
-        {/*}*/}
-        {/*.page {*/}
-           {/*background: white;*/}
-           {/*height: calc(100vh - 32px);*/}
-           {/*margin: 16px;*/}
-           {/*border-radius: 4px;*/}
-           {/*box-shadow: 0 3px 10px 8px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);*/}
-        {/*}*/}
         :global(html) {
             height: 100%;
         }
@@ -39,6 +29,11 @@ export default () => (
             font-size: 22px;
             color: rgba(1, 169, 255, 0.54);
         }
+        .socials-wrapper {
+            display: flex;
+            margin-top: 180px;
+            justify-content: center;
+        }
     `}</style>
         <div className="page">
             <Header/>
@@ -51,6 +46,10 @@ export default () => (
                     <span className="accent">&& </span> Trainer <br/>
                 </h1>
                 <Avatar src="/static/me-min.jpg"/>
+            </div>
+
+            <div className="socials-wrapper">
+                <Socials />
             </div>
         </div>
     </div>

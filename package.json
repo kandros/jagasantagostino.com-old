@@ -15,6 +15,7 @@
     "glamor": "^2.20.24",
     "next": "^2.0.1",
     "react": "^15.4.2",
-    "react-dom": "^15.4.2"
+    "react-dom": "^15.4.2",
+    "react-social-icons": "^2.6.0"
   }
 }

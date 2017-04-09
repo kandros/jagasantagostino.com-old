@@ -25,13 +25,16 @@ const Cta = ({text, href}) => (
             b {
                 font-size: 12px;
             }
+            a {
+                text-decoration: none;
+            }
         `}
         </style>
-        <Link href={href}>
+        <a href={href}>
             <div className="button">
                 <b>{text}</b>
             </div>
-        </Link>
+        </a>
     </div>
 )
 

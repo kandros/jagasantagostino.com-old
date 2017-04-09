@@ -33,10 +33,10 @@ const Header = () => (
 
         <nav>
             <div className="sources">(<a target="_blank" href="https://github.com/kandros/jagasantagostino.com" className="source-link">sources</a>)</div>
-            <Link href="/about" className="link"><a className="link">about</a></Link>
+            {/*<Link href="/about" className="link"><a className="link">about</a></Link>*/}
             <a target="_blank" href="//blog.jagasantagostino.com" className="link">blog</a>
-            <Link href="/open-source" className="link"><a className="link">open-source</a></Link>
-            <Link href="/contacts" className="link"><a className="link">contacts</a></Link>
+            {/*<Link href="/open-source" className="link"><a className="link">open-source</a></Link>*/}
+            {/*<Link href="/contacts" className="link"><a className="link">contacts</a></Link>*/}
             <div className="hire-me-wrapper">
                 <HireMeButton/>
             </div>
