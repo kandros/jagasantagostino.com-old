@@ -1,0 +1,20 @@
+{
+  "name": "jagasantagostino.com",
+  "version": "0.0.1",
+  "description": "my website - https://jagasantagostino.com",
+  "main": "index.js",
+  "repository": "https://github.com/kandros/jagasantagostino.com",
+  "author": "Jaga Santagostino <jagasantagostino@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "glamor": "^2.20.24",
+    "next": "^2.0.1",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  }
+}
