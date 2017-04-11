@@ -11,17 +11,15 @@ const Socials = () => (
         }
         @keyframes slidein {
               from {
-                margin-right: -240px;
                 opacity: 0;
               }
             to {
-                margin-right: 0px;
                 opacity: 1;
             }
         }
         @media (min-width: 768px) {
          div {
-            animation-duration: 2s;
+            animation-duration: 2.5s;
             animation-name: slidein;
          }
         }

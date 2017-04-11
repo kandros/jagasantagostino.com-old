@@ -30,11 +30,9 @@ export default () => (
         }
         @keyframes slidein {
               from {
-                margin-right: -240px;
                 opacity: 0;
               }
             to {
-                margin-right: 8px;
                 opacity: 1;
             }
         }
@@ -69,7 +67,7 @@ export default () => (
             .hire-me-mobile {
                 display: none;
             }
-            h1 {
+            .main {
                 animation-duration: 2s;
                 animation-name: slidein;
             }

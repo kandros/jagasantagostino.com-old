@@ -12,6 +12,13 @@ export default class MyDocument extends Document {
     render() {
         return (
             <html>
+            <style jsx>{`
+            body {
+                font-family: sans-serif
+            }
+            `}
+
+            </style>
             <Head>
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
