@@ -20,8 +20,9 @@ export default class MyDocument extends Document {
 
             </style>
             <Head>
+                <title>Jaga Santagostino</title>
+                <meta name="description" content="freelance javascript developer and trainer with focus on React ecosystem" />
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-
                 <GoogleAnalytics/>
             </Head>
             <body className="custom_class">

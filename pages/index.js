@@ -74,6 +74,9 @@ export default () => (
         }
     `}</style>
         <div className="page">
+            <Head>
+                <title>Jaga Santagostino - Home </title>
+            </Head>
             <Header/>
             <div className="main">
                 <h1>
