@@ -1,4 +1,5 @@
 import Header from '../components/header'
+import Head from 'next/head'
 import Avatar from '../components/avatar'
 import 'glamor/reset'
 import HireMeButton from '../components/hire-me-button'
