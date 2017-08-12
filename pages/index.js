@@ -49,6 +49,7 @@ export default () => (
 
         @media (max-width: 768px) {
             .main {
+                font-size: 80%;
                 flex-direction: column;
                 margin-top: 0px;
             }
