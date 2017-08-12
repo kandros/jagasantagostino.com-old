@@ -3,11 +3,9 @@ import flush from 'styled-jsx/server'
 import GoogleAnalytics from '../components/google-analytics.js'
 
 export default class MyDocument extends Document {
-    static getInitialProps({renderPage}) {
-        const {html, head} = renderPage()
-        const styles = flush()
-        return {html, head, styles}
-    }
+static getInitialProps (ctx) {
+   return Document.getInitialProps(ctx)
+}
 
     render() {
         return (
