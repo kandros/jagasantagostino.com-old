@@ -9,7 +9,10 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "export": "next export"
+    "preexport": "yarn build",
+    "export": "next export",
+    "predeploy": "yarn export",
+    "deploy": "now out --name jagasantagostino.com | xargs -I {} now alias {} jagasantagostino.com"
   },
   "dependencies": {
     "glamor": "^2.20.39",
