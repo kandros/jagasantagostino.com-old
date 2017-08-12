@@ -22,6 +22,9 @@ const Cta = ({text, href}) => (
                 background: #fff;
                 color: #000;
             }
+            .button:active {
+              background: rgba(0, 0, 0, 0.27);
+            }
             b {
                 font-size: 12px;
             }
