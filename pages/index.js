@@ -15,7 +15,7 @@ export default () => (
             height: 100%;
         }
         .main {
-            margin: 200px auto 0;
+            margin: 120px auto 0;
             max-width: 950px;
             height: 100%;
             display: flex;
@@ -43,7 +43,13 @@ export default () => (
         }
         .socials-wrapper {
             display: flex;
-            margin-top: 180px;
+            margin-top: 80px;
+            justify-content: center;
+        }
+
+        .hire-me {
+            margin-top: 80px;
+            display: flex;
             justify-content: center;
         }
 
@@ -53,11 +59,6 @@ export default () => (
                 flex-direction: column;
                 margin-top: 0px;
             }
-            .hire-me-mobile {
-                margin-top: 80px;
-                display: flex;
-                justify-content: center;
-            }
             .socials-wrapper {
                 padding: 16px;
                 margin-top: 60px;
@@ -66,9 +67,6 @@ export default () => (
         }
 
         @media (min-width: 768px) {
-            .hire-me-mobile {
-                display: none;
-            }
             .main {
                 animation-duration: 2s;
                 animation-name: slidein;
@@ -91,7 +89,7 @@ export default () => (
                 <Avatar src="/static/me-min.jpg"/>
             </div>
 
-            <div className="hire-me-mobile">
+            <div className="hire-me">
                 <HireMeButton/>
             </div>
 
