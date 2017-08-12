@@ -27,3 +27,4 @@ typings/
 .idea/
 .next/
 .DS_STORE
+out/
