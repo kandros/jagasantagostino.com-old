@@ -28,13 +28,7 @@ const Header = () => (
                 margin-right: 50px;
                 text-decoration: none;
             }
-            .hire-me-wrapper {
-            }
-
             @media (max-width: 768px) {
-                .hire-me-wrapper {
-                    display: none;
-                }
                 .sources {
                     position: absolute;
                     top: 6px;
@@ -50,10 +44,6 @@ const Header = () => (
             {/*<a target="_blank" href="//blog.jagasantagostino.com" className="link">blog</a>*/}
             {/*<Link href="/open-source" className="link"><a className="link">open-source</a></Link>*/}
             {/*<Link href="/contacts" className="link"><a className="link">contacts</a></Link>*/}
-            <div className="hire-me-wrapper">
-                <HireMeButton/>
-            </div>
-
             <ReactTooltip id="sources" effect="solid" place="bottom">
                 <span>Open Source 🎉🎉🎉</span>
             </ReactTooltip>
