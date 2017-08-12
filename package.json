@@ -11,10 +11,10 @@
     "start": "next start"
   },
   "dependencies": {
-    "glamor": "^2.20.24",
-    "next": "^2.1.0",
-    "react": "^15.4.2",
-    "react-dom": "^15.4.2",
+    "glamor": "^2.20.39",
+    "next": "^3.0.3",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
     "react-social-icons": "^2.6.0",
     "react-tooltip": "^3.2.10"
   },
