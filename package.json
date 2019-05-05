@@ -11,7 +11,7 @@
     "start": "next start",
     "preexport": "yarn build",
     "export": "next export",
-    "predeploy": "yarn export",
+    "predeploy": "NODE_ENV=production yarn export",
     "deploy": "now out --name jagasantagostino.com | xargs -I {} now alias {} jagasantagostino.com"
   },
   "dependencies": {
